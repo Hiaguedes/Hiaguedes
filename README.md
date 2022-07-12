@@ -1,21 +1,27 @@
 #  I`m Hiago Guedes -> Hiaguedes
 
-## 🌱 Front End Jr Developer
+## Jr Software Enginneer
 
-You can contact me on hiagorguedes@gmail.com
+:technologist:
 
-:building_construction:
+Using github primarily to implement things I've been studying
 
-- HTML & CSS
-- JS
+- Typescript
 - Rest API & GraphQL
 - React
-- Jest
+- TDD
+- CI/CD
+- Docker
+- Software Enginneering skills
 
 [![Hiaguedes's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hiaguedes&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Hiaguedes&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Linkedin](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hiagoguedes/)
 [![Codewars Badge](https://www.codewars.com/users/Hiaguedes/badges/small)](https://www.codewars.com/users/Hiaguedes)
 
 ![Snake Animation](https://github.com/Hiaguedes/Hiaguedes/blob/output/github-contribution-grid-snake.svg)
+
+##
+
+  <a href = "mailto:hiagorguedes@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/hiagoguedes/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
