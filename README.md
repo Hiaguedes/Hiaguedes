@@ -17,7 +17,9 @@ Using github primarily to implement things I've been studying
 [![Hiaguedes's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hiaguedes&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Hiaguedes&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
+<!---
 [![Codewars Badge](https://www.codewars.com/users/Hiaguedes/badges/small)](https://www.codewars.com/users/Hiaguedes)
+--->
 
 ![Snake Animation](https://github.com/Hiaguedes/Hiaguedes/blob/output/github-contribution-grid-snake.svg)
 
