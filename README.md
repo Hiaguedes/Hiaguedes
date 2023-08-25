@@ -1,6 +1,6 @@
 #  I`m Hiago Guedes -> Hiaguedes
 
-## Jr Software Enginneer
+## Software Enginneer
 
 :technologist:
 
@@ -9,10 +9,8 @@ Using github primarily to implement things I've been studying
 - Typescript
 - Rest API & GraphQL
 - React
-- TDD
+- TDD with jest
 - CI/CD
-- Docker
-- Software Enginneering skills
 
 [![Hiaguedes's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hiaguedes&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Hiaguedes&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
