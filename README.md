@@ -21,8 +21,6 @@ Using github primarily to implement things I've been studying
 [![Codewars Badge](https://www.codewars.com/users/Hiaguedes/badges/small)](https://www.codewars.com/users/Hiaguedes)
 --->
 
-![Snake Animation](https://github.com/Hiaguedes/Hiaguedes/blob/output/github-contribution-grid-snake.svg)
-
 ##
 
   <a href = "mailto:hiagorguedes@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
