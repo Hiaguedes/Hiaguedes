@@ -23,7 +23,7 @@ jobs:
 
     - name: Run command and update README
       run: |
-        OUTPUT=$(npx hiaguedes)
+        OUTPUT=$(npx ts-node ./read.ts)
         echo "$OUTPUT"
         sed -i "/<!-- output-start -->/,/<!-- output-end -->/c\<!-- output-start -->\n$OUTPUT\n<!-- output-end -->" README.md
 
