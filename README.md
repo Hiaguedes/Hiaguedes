@@ -17,14 +17,16 @@ Using github primarily to implement things I've been studying
 
 ## Contacts
 
+Digitando no terminal:
+
 ```bash
 npx hiaguedes
 ```
 
-Output:
+Tera o output:
 
-```json
 <!-- output-start -->
+```json
 {
     "name": "Hiago Riba Guedes",
     "avatar": "https://avatars.githubusercontent.com/u/23282043?v=4",
@@ -41,4 +43,5 @@ Output:
     },
     "company": []
   }
+```
 <!-- output-end -->
