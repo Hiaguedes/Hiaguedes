@@ -21,7 +21,9 @@ Using github primarily to implement things I've been studying
 npx hiaguedes
 ```
 
-Output: 
+Output:
 
+```json
 <!-- output-start -->
 <!-- output-end -->
+```
