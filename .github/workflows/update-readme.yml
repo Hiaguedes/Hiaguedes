@@ -25,20 +25,7 @@ jobs:
       run: |
         OUTPUT=$(npx ts-node ./read.ts)
         echo "$OUTPUT"
-        awk -v content="$OUTPUT" '
-          /<!-- output-start -->/ {
-            print
-            print "```json"
-            print content
-            print "```"
-            p=0
-            next
-          }
-          p;
-          /<!-- output-end -->/ {
-            p=1
-          }
-          ' README.md > README.tmp && mv README.tmp README.md
+        awk -v content="$OUTPUT" 'BEGIN {p=1} /<!-- output-start -->/ {print; p=0} p;  {print "```json\n" content "\n```"; p=1} /<!-- output-end -->/' README.md > README.tmp && mv README.tmp README.md
       
     - name: Commit and push changes
       run: |
