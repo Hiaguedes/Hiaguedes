@@ -29,13 +29,13 @@ jobs:
           /<!-- output-start -->/ {
             print
             print "```json"
+            print content
+            print "```"
             p=0
+            next
           }
           p;
           /<!-- output-end -->/ {
-            print "```"
-            print content
-            print "<!-- output-end -->"
             p=1
           }
           ' README.md > README.tmp && mv README.tmp README.md
