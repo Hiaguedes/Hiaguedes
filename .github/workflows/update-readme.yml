@@ -25,8 +25,7 @@ jobs:
       run: |
         OUTPUT=$(npx ts-node ./read.ts)
         echo "$OUTPUT"
-        sed -i "/<!-- output-start -->/,/<!-- output-end -->/c\<!-- output-start -->\n$OUTPUT\n<!-- output-end -->" README.md
-
+        awk -v content="$OUTPUT" 'BEGIN {p=1} /<!-- output-start -->/ {print; p=0} p; /<!-- output-end -->/ {print content; p=1}' README.md > README.tmp && mv README.tmp README.md
     - name: Commit and push changes
       run: |
         git config --global user.name 'github-actions[bot]'
