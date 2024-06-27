@@ -1,0 +1,33 @@
+{
+  "name": "hiaguedes",
+  "version": "0.0.1",
+  "description": "Presenting Hiago Guedes, hiaguedes",
+  "main": "read.ts",
+  "bin": {
+    "hiaguedes": "./read.js"
+  },
+  "scripts": {
+    "build": "tsc read.ts",
+    "read": "ts-node ./read.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiaguedes/hiaguedes.git"
+  },
+  "keywords": [
+    "hiaguedes"
+  ],
+  "author": "Hiaguedes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hiaguedes/hiaguedes/issues"
+  },
+  "homepage": "https://github.com/Hiaguedes/hiaguedes#readme",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9"
+  }
+}
