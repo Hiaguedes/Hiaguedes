@@ -61,10 +61,10 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-          tag_name: ${{ steps.update_version.outputs.new_version }}
-          release_name: Release ${{ steps.update_version.outputs.new_version }}
+          tag_name: ${{ env.VERSION_TYPE }}
+          release_name: Release ${{ env.VERSION_TYPE }}
           body: |
-            Release ${{ steps.update_version.outputs.new_version }} - Describe your release here.
+            Release ${{ env.VERSION_TYPE }} - Describe your release here.
             
     - name: Push changes
       run: |
