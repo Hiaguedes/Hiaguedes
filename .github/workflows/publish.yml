@@ -55,7 +55,7 @@ jobs:
         
         git tag $NEW_VERSION
         git push origin main --tags
-        npm publish --registry=https://registry.npmjs.org/
+        npm publish --registry=https://registry.npmjs.org/ --access=public
 
     - name: Create GitHub Release
       id: create_release
