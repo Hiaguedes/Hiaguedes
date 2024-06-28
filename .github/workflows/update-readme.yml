@@ -47,7 +47,7 @@ jobs:
     - name: Run command and update README
       if: env.CHANGED == 'true'
       run: |
-        OUTPUT=$(ts-node ./read.js)
+        OUTPUT=$(npx ts-node ./read.js)
         echo "$OUTPUT"
         awk -v content="$OUTPUT" 'BEGIN {p=1} /<!-- output-start -->/ {print; p=0} p; /<!-- output-end -->/ {print "```json\n" content "\n```\n <!-- output-end -->"; p=1}' README.md > README.tmp && mv README.tmp README.md    
       
