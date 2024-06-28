@@ -21,7 +21,6 @@ Digitando no terminal:
 
 ```bash
 npx hiaguedes
-# comando ainda nao existente, aguardando acesso do npm
 ```
 
 Tera o output:
@@ -48,3 +47,7 @@ Tera o output:
 }
 ```
  <!-- output-end -->
+
+ [![Version](https://img.shields.io/npm/v/hiaguedes.svg)](https://npmjs.org/package/hiaguedes)
+![GitHub Action Update Readme Workflow](https://github.com/Hiaguedes/hiaguedes/actions/workflows/update-readme.yml/badge.svg)
+
