@@ -37,19 +37,20 @@ jobs:
         VERSION_TYPE: ${{ env.VERSION_TYPE }}
       run: |
         # Atualiza a versão no package.json e package-lock.json
-        NEW_VERSION=$(npm version $VERSION_TYPE --no-git-tag-version)
+        NEW_VERSION=$(cat version-type.txt)
+        npm version $NEW_VERSION --no-git-tag-version
 
         # Construa o projeto (se necessário)
         npm run build
-
-        # Publica no npm
-        npm publish
-
+        
         # Comita e envia a mudança de versão
         git config --global user.name 'github-actions[bot]'
         git config --global user.email github-actions@github.com
         git add --all
         git commit -m "Bump version from ${{ env.PREV_VERSION }} to $NEW_VERSION"
+        
+        
         git tag $NEW_VERSION
         git push origin $NEW_VERSION
         git push
+        npm publish
