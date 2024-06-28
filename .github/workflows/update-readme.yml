@@ -32,6 +32,9 @@ jobs:
       with:
         node-version: '16'
 
+    - name: Update Branch
+      if: env.CHANGED == 'true'
+      run: git pull origin
 
     - name: Install dependencies
       if: env.CHANGED == 'true'
@@ -40,7 +43,7 @@ jobs:
     - name: Run command and update README
       if: env.CHANGED == 'true'
       run: |
-        OUTPUT=$(npx ts-node ./read.ts)
+        OUTPUT=$(npx hiaguedes)
         echo "$OUTPUT"
         awk -v content="$OUTPUT" 'BEGIN {p=1} /<!-- output-start -->/ {print; p=0} p; /<!-- output-end -->/ {print "```json\n" content "\n```\n <!-- output-end -->"; p=1}' README.md > README.tmp && mv README.tmp README.md    
       
