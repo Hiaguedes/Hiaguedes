@@ -36,7 +36,7 @@ jobs:
 
     - name: Bump version and publish
       env:
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         VERSION_TYPE: ${{ env.VERSION_TYPE }}
       run: |
         # Atualiza a versão no package.json e package-lock.json
