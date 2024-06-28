@@ -50,10 +50,9 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email github-actions@github.com
         git add --all
-        git commit -m "Bump version from ${{ env.PREV_VERSION }} to $NEW_VERSION"
+        git commit -m "Bump version from ${{ env.PREV_VERSION }} to $NEW_VERSION" --no-verify
         
         
         git tag $NEW_VERSION
-        git push origin $NEW_VERSION
-        git push
+          git push origin main --tags
         npm publish
