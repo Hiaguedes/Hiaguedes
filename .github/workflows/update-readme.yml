@@ -40,6 +40,10 @@ jobs:
       if: env.CHANGED == 'true'
       run: npm install
 
+    - name: give perrmission to execute bin file
+      if: env.CHANGED == 'true'
+      run: chmod +x ./read.js
+
     - name: Run command and update README
       if: env.CHANGED == 'true'
       run: |
@@ -114,7 +118,7 @@ jobs:
           tag_name: ${{ env.VERSION_TYPE }}
           release_name: Release ${{ env.VERSION_TYPE }}
           body: |
-            Release ${{ env.VERSION_TYPE }} - Describe your release here.
+            Release ${{ env.VERSION_TYPE }}
             
     - name: Push changes
       run: |
