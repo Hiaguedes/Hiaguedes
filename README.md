@@ -21,6 +21,7 @@ Digitando no terminal:
 
 ```bash
 npx hiaguedes
+# comando ainda nao existente, aguardando acesso do npm
 ```
 
 Tera o output:
