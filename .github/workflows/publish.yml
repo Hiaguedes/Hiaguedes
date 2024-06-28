@@ -20,6 +20,9 @@ jobs:
         node-version: '16'
         registry-url: 'https://registry.npmjs.org/'
 
+    - name: Set execute permission for verify-version-file.sh
+      run: chmod +x ./scripts/verify-version-file.sh
+
     - name: Install dependencies
       run: npm install
 
