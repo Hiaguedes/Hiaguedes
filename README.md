@@ -31,7 +31,7 @@ Tera o output:
     "name": "Hiago Riba Guedes",
     "avatar": "https://avatars.githubusercontent.com/u/23282043?v=4",
     "blog": "https://hiaguedes.github.io",
-    "location": "Rio de Janeiro",
+    "location": "Rio de Janeiro, Brazil",
     "socials": {
         "personal": {
             "instagram": "https://www.instagram.com/hiago.guedes",
