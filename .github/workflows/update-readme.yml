@@ -50,5 +50,5 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email github-actions@github.com
         git add README.md
-        git commit -m 'Update README with latest JSON output'
+        git commit -m 'Update README with latest JSON output' --no-verify
         git push
