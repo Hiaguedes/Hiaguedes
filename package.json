@@ -1,6 +1,6 @@
 {
   "name": "hiaguedes",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Presenting Hiago Guedes, hiaguedes",
   "main": "read.ts",
   "bin": {
