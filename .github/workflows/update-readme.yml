@@ -115,6 +115,5 @@ jobs:
             
     - name: Push changes
       run: |
-              git pull
               git tag v$(cat version-type.txt)
               git push origin main --tags
