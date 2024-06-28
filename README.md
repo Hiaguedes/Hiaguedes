@@ -50,4 +50,5 @@ Tera o output:
 
  [![Version](https://img.shields.io/npm/v/hiaguedes.svg)](https://npmjs.org/package/hiaguedes)
 ![GitHub Action Update Readme Workflow](https://github.com/Hiaguedes/hiaguedes/actions/workflows/update-readme.yml/badge.svg)
+![GitHub Action publish NPM Workflow](https://github.com/Hiaguedes/hiaguedes/actions/workflows/publish.yml/badge.svg)
 

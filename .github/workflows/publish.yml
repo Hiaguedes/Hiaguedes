@@ -53,8 +53,6 @@ jobs:
         git commit -m "Bump version from ${{ env.PREV_VERSION }} to $NEW_VERSION" --no-verify
         
         
-        git tag $NEW_VERSION
-        git push origin main --tags
         npm publish --registry=https://registry.npmjs.org/ --access=public
 
     - name: Create GitHub Release
@@ -63,7 +61,12 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-          tag_name: v$(cat version-type.txt)
-          release_name: Release v$(cat version-type.txt)
+          tag_name: ${{ steps.update_version.outputs.new_version }}
+          release_name: Release ${{ steps.update_version.outputs.new_version }}
           body: |
-            v$(cat version-type.txt)
+            Release ${{ steps.update_version.outputs.new_version }} - Describe your release here.
+            
+    - name: Push changes
+      run: |
+              git tag v$(cat version-type.txt)
+              git push origin main --tags
