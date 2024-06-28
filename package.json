@@ -2,7 +2,7 @@
   "name": "hiaguedes",
   "version": "1.0.10",
   "description": "Presenting Hiago Guedes, hiaguedes",
-  "main": "read.ts",
+  "main": "index.ts",
   "bin": {
     "hiaguedes": "./read.js"
   },
