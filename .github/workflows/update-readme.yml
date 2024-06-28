@@ -32,10 +32,6 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Update Branch
-      if: env.CHANGED == 'true'
-      run: git pull origin
-
     - name: Install dependencies
       if: env.CHANGED == 'true'
       run: npm install
@@ -73,6 +69,9 @@ jobs:
       with:
         node-version: '16'
         registry-url: 'https://registry.npmjs.org/'
+
+    - name: Update Branch
+      run: git pull origin
 
     - name: Set execute permission for verify-version-file.sh
       run: chmod +x ./scripts/verify-version-file.sh
