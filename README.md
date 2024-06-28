@@ -40,10 +40,11 @@ Tera o output:
         },
         "professional": {
             "github": "https://github.com/Hiaguedes",
-            "linkedin": "https://www.linkedin.com/in/hiagoguedes"
+            "linkedin": "https://www.linkedin.com/in/hiagoguedes",
+            "email": "hiagorguedes@gmail.com"
         }
     },
     "company": []
-  }
+}
 ```
  <!-- output-end -->
