@@ -1,4 +1,4 @@
-import { type InfoType } from "./info";
+import { type InfoType } from ".";
 import personalInfo from './info.json'
 
 export { personalInfo, InfoType }
