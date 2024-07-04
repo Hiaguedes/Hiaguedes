@@ -3,6 +3,7 @@
   "version": "1.0.12",
   "description": "Presenting Hiago Guedes, hiaguedes",
   "main": "index.ts",
+  "types": "info.d.ts",
   "bin": {
     "hiaguedes": "./read.js"
   },
