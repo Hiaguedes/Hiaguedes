@@ -59,7 +59,22 @@ The output will be something like:
             "email": "hiagorguedes@gmail.com"
         }
     },
-    "company": []
+    "company": [
+        {
+            "role": "Fullstack Developer",
+            "skills": [
+                "Node",
+                "React Native",
+                "NestJS",
+                "Typescript"
+            ],
+            "name": "CI&T",
+            "links": {
+                "site": "https://ciandt.com/br/pt-br",
+                "linkedin": "https://www.linkedin.com/company/ciandt/posts/?feedView=all"
+            }
+        }
+    ]
 }
 ```
  <!-- output-end -->
