@@ -1,4 +1,6 @@
-#  I`m Hiago Guedes -> Hiaguedes 🧑‍💻
+# Hey, What's up 👋
+
+## I`m Hiago Guedes -> Hiaguedes 🧑‍💻
 
 Using github primarily to implement things I've been studying
 
@@ -11,9 +13,6 @@ Using github primarily to implement things I've been studying
 - React
 - TDD with jest
 - CI/CD
-
-[![Hiaguedes's GitHub stats](https://github-readme-stats.vercel.app/api?username=Hiaguedes&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Hiaguedes&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Contacts
 
