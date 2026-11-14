@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         fetch-depth: 2
 
@@ -28,22 +28,18 @@ jobs:
 
     - name: Set up Node.js
       if: env.CHANGED == 'true'
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '16'
+        node-version: '22'
 
     - name: Install dependencies
       if: env.CHANGED == 'true'
       run: npm install
 
-    - name: give perrmission to execute bin file
-      if: env.CHANGED == 'true'
-      run: chmod +x ./read.js
-
     - name: Run command and update README
       if: env.CHANGED == 'true'
       run: |
-        OUTPUT=$(npx ts-node ./read.js)
+        OUTPUT=$(npx tsx ./read.ts)
         echo "$OUTPUT"
         awk -v content="$OUTPUT" 'BEGIN {p=1} /<!-- output-start -->/ {print; p=0} p; /<!-- output-end -->/ {print "```json\n" content "\n```\n <!-- output-end -->"; p=1}' README.md > README.tmp && mv README.tmp README.md    
       
@@ -62,12 +58,12 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '16'
+        node-version: '22'
         registry-url: 'https://registry.npmjs.org/'
 
     - name: Update Branch
@@ -96,15 +92,14 @@ jobs:
         NEW_VERSION=$(cat version-type.txt)
         npm version $NEW_VERSION --no-git-tag-version
 
-        # Construa o projeto (se necessário)
-        npm run build
+        # Compila o projeto com a configuração correta
+        npx tsc -p tsconfig.json
         
         # Comita e envia a mudança de versão
         git config --global user.name 'github-actions[bot]'
         git config --global user.email github-actions@github.com
         git add --all
         git commit -m "Bump version from ${{ env.PREV_VERSION }} to $NEW_VERSION" --no-verify
-        
         
         npm publish --registry=https://registry.npmjs.org/ --access=public
 
@@ -121,5 +116,5 @@ jobs:
             
     - name: Push changes
       run: |
-              git tag v$(cat version-type.txt)
-              git push origin main --tags
+            git tag v$(cat version-type.txt)
+            git push origin main --tags
