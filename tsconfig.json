@@ -5,8 +5,7 @@
     ],
     "removeComments": true,
     "target": "es2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
     "lib": [
       "es2022"
     ],
@@ -29,10 +28,4 @@
   "files": [
     "read.ts"
   ],
-  "include": [
-    "./**/*.ts"
-  ],
-  "exclude": [
-    "node_modules/**/*"
-  ]
 }
