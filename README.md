@@ -18,18 +18,22 @@ I'm a Mechatronic Engineer and Software Engineer. Working with Full Stack Develo
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![Golang](https://img.shields.io/badge/golang-00ADD8?&style=for-the-badge&logo=go&logoColor=white)
 
 ### 💻 Tools
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
+
+### ✨ AI
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-555?logo=claude&style=for-the-badge&logoColor=white)
+
 ## Currently Studying
 
-- Data Structures and Algorithms
-- Back End frameworks like NestJs
-- System Programming like Rust
+- AI Orchestration
+- Golang
 
 ## Contacts
 
