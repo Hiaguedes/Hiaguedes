@@ -70,7 +70,9 @@ The output will be something like:
                 "Node",
                 "React Native",
                 "NestJS",
-                "Typescript"
+                "Typescript",
+                "Golang",
+                "Claude Code"
             ],
             "name": "CI&T",
             "links": {
