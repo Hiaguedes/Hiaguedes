@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "removeComments": true,
+    "target": "es2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "es2022"
+    ],
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": false,
+    "paths": {"*": ["./*"]},
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "sourceRoot": "/",
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "files": [
+    "read.ts"
+  ],
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}
