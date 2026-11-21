@@ -53,10 +53,10 @@ The output will be something like:
     "avatar": "https://avatars.githubusercontent.com/u/23282043?v=4",
     "blog": "https://hiaguedes.github.io",
     "location": "Rio de Janeiro",
+    "curriculum": "https://goldenrod-ocelot-343.notion.site/Hiago-Guedes-430d2e4b40ba412b8eb416b0738c12e5?pvs=74",
     "socials": {
         "personal": {
-            "instagram": "https://www.instagram.com/hiago.guedes",
-            "twitter": "https://x.com/hiaguedes"
+            "instagram": "https://www.instagram.com/hiago.guedes"
         },
         "professional": {
             "github": "https://github.com/Hiaguedes",
